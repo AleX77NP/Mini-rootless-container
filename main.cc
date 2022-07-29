@@ -161,7 +161,7 @@ int child(void *args) {
 
     close(cargs->pipe_fd[0]); // close pipe
 
-    limitProcessCreation();
+    limitProcessCreation(); // won't work with non-root host user (mapping) -> run with sudo 
     
     printf("child process: %d with user %d\n", getpid(), getuid());
     setHostName("container1"); // change hostname
