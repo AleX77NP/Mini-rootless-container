@@ -212,7 +212,7 @@ int main() {
                     (intmax_t) getuid());
             uid_map = map_buf;
         }
-        update_map(uid_map, map_path);
+        update_map(uid_map, map_path); // map user 1000 on host to user 0 (root) in container
     }
 
     if (gid_map != NULL || map_zero) {
@@ -225,7 +225,7 @@ int main() {
                     (intmax_t) getgid());
             gid_map = map_buf;
         }
-        update_map(gid_map, map_path);
+        update_map(gid_map, map_path); // map user 1000 on host to user 0 (root) in container again
     }
 
     close(args.pipe_fd[1]); // close pipe
