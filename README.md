@@ -18,5 +18,5 @@ After you extract this minirootfs, run:
 Finally, execute program:
 ```./main``` (No root needed this time!)
 
-Difference compared to mini container: Rootles container has user 1000 from host mapped to user 0 inside container.
+Difference compared to mini container: Rootless container has user 1000 from host mapped to user 0 inside container.
 Therefore, it doesn't require sudo to run it.
