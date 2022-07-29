@@ -63,9 +63,7 @@ static void proc_setgroups_write(pid_t child_pid, char *str)
 static void update_map(char *mapping, char *map_file)
 {
     int fd;
-    size_t map_len;     /* Length of 'mapping' */
-
-    /* Replace commas in mapping string with newlines */
+    size_t map_len;
 
     map_len = strlen(mapping);
     for (int j = 0; j < map_len; j++)
