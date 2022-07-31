@@ -182,8 +182,8 @@ int main() {
     struct child_args args;
 
     int map_zero = 1;
-    char* uid_map = NULL;
-    char* gid_map = NULL;
+    char* uid_map = nullptr;
+    char* gid_map = nullptr;
 
     const int MAP_BUF_SIZE = 100;
     char map_buf[MAP_BUF_SIZE];
